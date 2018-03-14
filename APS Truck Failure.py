@@ -22,8 +22,6 @@ y[y > 0], y[y < 0] = 1, 0
 skf = StratifiedKFold(n_splits=5)
 predicted = np.array([np.zeros(y.shape[0]) for _ in range(3)])
 
-
-resample(y, n_samples=60000)
 #
 # errors=[]
 # states=[]
